@@ -1,0 +1,158 @@
+//$breakpoint-mobile: 768px;
+
+* {
+  padding: 0;
+  margin: 0;
+}
+// OPENING PAGE
+.opening-hexs {
+  width: 768px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border: solid 3px red;
+  padding: 5px;
+  margin: 5px;
+
+  img {
+    width: 60%;
+  }
+}
+// LANDING PAGE SECTION
+.background {
+  width: 768px;
+  height: 1200px;
+
+  position: relative;
+  border: solid 3px red;
+  padding: 5px;
+  margin: 5px;
+
+  img {
+    max-width: 100%;
+    max-height: 100%; 
+  }
+  &__image {
+    position: absolute;
+    z-index: 2;
+  }
+  &__capture {
+    position: absolute;
+    top: 0;
+    z-index: 5;
+  }
+  &__develop {
+    position: absolute;
+    top: 300px;
+    z-index: 5;
+  }
+  &__create {
+    position: absolute;
+    top: 600px;
+    z-index: 5;
+  }
+}
+
+// ABOUT SECTION
+.hexs {
+  width: 768px;
+  height: 1400px;
+
+  position: relative;
+  border: solid 3px red;
+  padding: 5px;
+  margin: 5px;
+
+  &__jemmaholmes {
+    max-width: 100%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+  &__hex12 {
+    transform: rotate(90deg);
+    width: 400px;
+    position: absolute;
+    top: 300px;
+    right: 0px;
+  }
+  &__hex1 {
+    max-height: 60%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+  }
+}  
+  
+// PROJECTS SECTION
+.projects {
+  width: 768px;
+  height: 1200px;
+
+  position: relative;
+  border: solid 3px red;
+  padding: 5px;
+  margin: 5px;
+
+  button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-decoration: none;
+    
+    font-size: 22px;
+    margin: 4px 2px;
+    cursor: pointer;
+    z-index: 5;
+  }
+
+  img {
+
+    max-width: 100%;
+    max-height: 100%; 
+  }
+  &__project-home {
+    position: absolute;
+    z-index: 2;
+  }
+  &__projects {
+    position: absolute;
+    top: 300;
+    z-index: 5;
+  }
+  &__project-one {
+    position: absolute;
+    top: 400;
+    z-index: 5;
+  }
+  &__project-two {
+    position: absolute;
+    top: 400;
+    z-index: 5;
+  }
+  &__project-three {
+    position: absolute;
+    top: 600;
+    z-index: 5;
+  }
+}
+
+// // CONTACT SECTION
+.bottom-hexs {
+  width: 768px;
+
+  display: flex;
+  justify-content: space-between 0px;
+  justify-content: center;
+  border: solid 3px red;
+  padding: 5px;
+  margin: 5px;
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
