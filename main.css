@@ -43,58 +43,54 @@ section__create {
 
 @media (orientation: portrait) {
   .background {
-    background-image: url("Mobile images/background1.jpg");
+    background-image: url("Mobile images/11Background-portrait.png");
     background-size: 100%;
-    background-repeat: none;
+    background-repeat: no-repeat;
     z-index: 2;
   }
 }
 @media (orientation: landscape) {
   .background {
-    background-image: url("Mobile images/background2.jpg");
+    background-image: url("Mobile images/backgroundlandscape.jpg");
     background-size: 100%;
     background-repeat: none;
     z-index: 2;
   }
 }
-.hexs {
+section {
   width: 768px;
   height: 1400px;
-  position: relative;
   border: solid 3px red;
   padding: 5px;
   margin: 5px;
 }
-.hexs__jemmaholmes {
-  max-width: 100%;
-  position: absolute;
-  top: 0px;
-  right: 0px;
+section__jemmaholmes {
+  width: 80%;
+  height: auto;
+  position: relative;
 }
-.hexs__hex12 {
-  transform: rotate(90deg);
-  width: 400px;
-  position: absolute;
-  top: 300px;
-  right: 0px;
-}
-.hexs__hex1 {
-  max-height: 60%;
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
+section .hexs {
+  width: 60%;
+  height: 60%;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
 }
 
-.projects {
+main {
   width: 768px;
   height: 1200px;
-  position: relative;
   border: solid 3px red;
   padding: 5px;
   margin: 5px;
 }
-.projects button {
+main button {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   border: none;
+  background-color: #C4C4C4;
   color: white;
   padding: 15px 32px;
   text-decoration: none;
@@ -103,37 +99,17 @@ section__create {
   cursor: pointer;
   z-index: 5;
 }
-.projects img {
-  max-width: 100%;
-  max-height: 100%;
-}
-.projects__project-home {
-  position: absolute;
+
+.projects {
+  background-image: url("Mobile images/projectbackground2.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
   z-index: 2;
-}
-.projects__projects {
-  position: absolute;
-  top: 300;
-  z-index: 5;
-}
-.projects__project-one {
-  position: absolute;
-  top: 400;
-  z-index: 5;
-}
-.projects__project-two {
-  position: absolute;
-  top: 400;
-  z-index: 5;
-}
-.projects__project-three {
-  position: absolute;
-  top: 600;
-  z-index: 5;
 }
 
 .bottom-hexs {
   width: 768px;
+  height: 250px;
   display: flex;
   justify-content: space-between 0px;
   justify-content: center;
