@@ -1,147 +1,149 @@
-$breakpoint-mobile: 768px;
-
 * {
   padding: 0;
   margin: 0;
 }
 
-
-
-// OPENING PAGE
-
-.opening-hexs {
-  width: 768px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  border: solid 3px red;
-  padding: 5px;
-  margin: 5px;
-
-  img {
-    width: 60%;
-  }
-}
-  // LANDING PAGE SECTION
-section {
-  width: 768px;
-  height: 1200px;
-
-  position: relative;
-  border: solid 3px red;
-  padding: 5px;
-  margin: 5px;
-  
-  &__capture {
-    position: absolute;
-    top: 0;
-    z-index: 5;
-  }
-  &__develop {
-    position: absolute;
-    top: 300px;
-    z-index: 5;
-  }
-  &__create {
-    position: absolute;
-    top: 600px;
-    z-index: 5;
-  }
-}
+// // PORTRAIT
 @media  (orientation: portrait) {
+  // OPENING PAGE
+  .opening-hexs {
+    width: 768px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: solid 3px red;
+    padding: 5px;
+    margin: 5px;
+
+    img {
+      width: 60%;
+    }
+  }
+    // LANDING PAGE SECTION
+  section {
+    width: 786px;
+    height: auto;
+
+    position: relative;
+    border: solid 3px red;
+    padding: 5px;
+    margin: 5px;
+  }
   .background {
-    background-image: url('Mobile images/11Background-portrait.png');
+    background-image: url('Mobile images/1.Background-portrait.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
     z-index: 2;
   }
-}
-@media  (orientation: landscape) {
   .background {
-    background-image: url('Mobile images/backgroundlandscape.jpg');
-    background-size: 100%;
-    background-repeat: none;
-    z-index: 2;
+    &__capture {
+      width: 35%;
+      height: auto;
+      position: absolute;
+      top: 0;
+      z-index: 5;
+    }
+    &__develop {
+      width: 35%;
+      height: auto;
+      position: absolute;
+      top: 300px;
+      z-index: 5;
+    }
+    &__create {
+      width: 35%;
+      height: auto;
+      position: absolute;
+      top: 600px;
+      z-index: 5;
+    }
   }
-}
 
-// ABOUT SECTION
-section {
-  width: 768px;
-  height: 1400px;
-
-  border: solid 3px red;
-  padding: 5px;
-  margin: 5px;
-
-  &__jemmaholmes {
-    width: 80%;
-    height: auto;
-
-    position: relative;
-  }
-  .hexs {
-    width: 60%;
-    height: 60%;
+  // ABOUT SECTION
+  section {
+    width: 758px;
+    height: 1200px;
 
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
+    justify-content: center;
+
+    border: solid 3px red;
+    padding: 5px;
+    margin: 5px;
+
+    img {
+      width: 80%;
+      height: auto;
+    }
+  }
+
+  .hexs {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-}  
-  
-// PROJECTS SECTION
-main {
-  width: 768px;
-  height: 1200px;
+  .hexs img {
+      height: 35%;
+      width: 35%;
+    }
+   
+    
+  // PROJECTS SECTION
+  main {
+    width: 768px;
+    height: 1400px;
 
-  border: solid 3px red;
-  padding: 5px;
-  margin: 5px;
-
-  button {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: space-between 40px;
+    justify-content: center;
     align-items: center;
 
-    border: none;
-    background-color: #C4C4C4;
-    color: white;
-    padding: 15px 32px;
-    text-decoration: none;
-    
-    font-size: 22px;
-    margin: 4px 2px;
-    cursor: pointer;
-    z-index: 5;
+    border: solid 3px red;
+    padding: 5px;
+    margin: 5px;
+
+    button {
+      width: 200px;
+      border: none;
+      background-color: #C4C4C4;
+      color: white;
+      padding: 15px 32px;
+      text-decoration: none;
+      
+      font-size: 22px;
+      margin: 4px 2px;
+      cursor: pointer;
+      z-index: 5;
+    }
   }
-}
+  .projects {
+    background-image: url('Mobile images/projectbackground2.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 2;
+  }
 
-.projects {
-  background-image: url('Mobile images/projectbackground2.jpg');
-  background-size: 100%;
-  background-repeat: no-repeat;
-  z-index: 2;
-}
+  // CONTACT SECTION
+  .bottom-hexs {
+    width: 768px;
+    height: 250px;
 
-// // CONTACT SECTION
-.bottom-hexs {
-  width: 768px;
-  height: 250px;
+    display: flex;
+    justify-content: space-between 0px;
+    justify-content: center;
+    border: solid 3px red;
+    padding: 5px;
+    margin: 5px;
 
-  display: flex;
-  justify-content: space-between 0px;
-  justify-content: center;
-  border: solid 3px red;
-  padding: 5px;
-  margin: 5px;
-
-  img {
-    max-width: 100%;
-    max-height: 100%;
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
   }
 }
