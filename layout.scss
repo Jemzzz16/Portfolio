@@ -11,7 +11,7 @@
 
     // LANDING PAGE **PORTRAIT**
   .background {
-    background-image: url('Mobile images/1.Background-portrait.jpg');
+    background-image: url('Mobile images/Landing-Portrait.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
     z-index: 2;
@@ -35,7 +35,7 @@
 
   // PROJECT SECTION **PORTRAIT**
   .projects {
-    background-image: url('Mobile images/projectbackground2.jpg');
+    background-image: url('Mobile images/Project-Portrait.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
     z-index: 2;
@@ -57,7 +57,7 @@
 
   // LANDING PAGE **LANDSCAPE**
   .background{
-    background-image: url('Mobile images/backgroundlandscape.jpg');
+    background-image: url('Mobile images/Landing-Landscape.jpg');
     background-size: 100%;
     background-repeat: none;
     z-index: 2;
@@ -74,7 +74,7 @@
 
   // PROJECT SECTION **LANDSCAPE**
   .projects {
-    background-image: url('Mobile images/1Project-background.jpg');
+    background-image: url('Mobile images/Project-Landscape.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
     z-index: 2;
@@ -93,7 +93,6 @@
 
 // CONTACT SECTION
 .contact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+  justify-content: space-around;
 }

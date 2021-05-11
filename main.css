@@ -27,29 +27,30 @@ section {
 
 .opening-hexs img {
   width: 33%;
+  height: auto;
 }
 
 .background__capture {
-  width: 35%;
-  height: 35%;
+  width: 20%;
+  height: 20%;
 }
 .background__develop {
-  width: 35%;
-  height: 35%;
+  width: 20%;
+  height: 20%;
 }
 .background__create {
-  width: 35%;
-  height: 35%;
+  width: 20%;
+  height: 20%;
 }
 
 .about__jemmaholmes {
-  width: 80%;
-  height: 80%;
+  width: 40%;
+  height: 40%;
 }
 
 .hexs img {
-  height: 35%;
-  width: 35%;
+  height: 30%;
+  width: 30%;
 }
 
 .projects button {
@@ -66,16 +67,28 @@ section {
 }
 
 .contact__linkedin {
-  max-width: 80%;
-  max-height: 80%;
+  max-width: 60%;
+  max-height: 60%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 10%;
 }
 .contact__instagram {
-  max-width: 80%;
-  max-height: 80%;
+  max-width: 60%;
+  max-height: 60%;
+  position: absolute;
+  bottom: 0;
+  left: 45%;
+  margin: 10%;
 }
 .contact__github {
-  max-width: 80%;
-  max-height: 80%;
+  max-width: 60%;
+  max-height: 60%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 10%;
 }
 
 @media (orientation: portrait) {
@@ -87,7 +100,7 @@ section {
   }
 
   .background {
-    background-image: url("Mobile images/1.Background-portrait.jpg");
+    background-image: url("Mobile images/Landing-Portrait.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
     z-index: 2;
@@ -109,7 +122,7 @@ section {
   }
 
   .projects {
-    background-image: url("Mobile images/projectbackground2.jpg");
+    background-image: url("Mobile images/Project-Portrait.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
     z-index: 2;
@@ -123,7 +136,7 @@ section {
   }
 
   .background {
-    background-image: url("Mobile images/backgroundlandscape.jpg");
+    background-image: url("Mobile images/Landing-Landscape.jpg");
     background-size: 100%;
     background-repeat: none;
     z-index: 2;
@@ -137,7 +150,7 @@ section {
   }
 
   .projects {
-    background-image: url("Mobile images/1Project-background.jpg");
+    background-image: url("Mobile images/Project-Landscape.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
     z-index: 2;
@@ -152,7 +165,6 @@ section {
 }
 
 .contact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+  justify-content: space-around;
 }
