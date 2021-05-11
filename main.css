@@ -1,30 +1,89 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+header {
+  width: 100vw;
+  height: 100vh;
+  border: solid 3px red;
+  padding: 5px;
+  margin: 5px;
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
+  border: solid 3px red;
+  padding: 5px;
+  margin: 5px;
+}
+
+.opening-hexs img {
+  width: 33%;
+}
+
+.background__capture {
+  width: 35%;
+  height: 35%;
+}
+.background__develop {
+  width: 35%;
+  height: 35%;
+}
+.background__create {
+  width: 35%;
+  height: 35%;
+}
+
+.about__jemmaholmes {
+  width: 80%;
+  height: 80%;
+}
+
+.hexs img {
+  height: 35%;
+  width: 35%;
+}
+
+.projects button {
+  width: 150px;
+  border: none;
+  background-color: #C4C4C4;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.contact__linkedin {
+  max-width: 80%;
+  max-height: 80%;
+}
+.contact__instagram {
+  max-width: 80%;
+  max-height: 80%;
+}
+.contact__github {
+  max-width: 80%;
+  max-height: 80%;
 }
 
 @media (orientation: portrait) {
   .opening-hexs {
-    width: 768px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: solid 3px red;
-    padding: 5px;
-    margin: 5px;
-  }
-  .opening-hexs img {
-    width: 60%;
-  }
-
-  section {
-    width: 786px;
-    height: auto;
-    position: relative;
-    border: solid 3px red;
-    padding: 5px;
-    margin: 5px;
   }
 
   .background {
@@ -32,43 +91,14 @@
     background-size: 100%;
     background-repeat: no-repeat;
     z-index: 2;
+    display: flex;
+    flex-direction: column;
   }
 
-  .background__capture {
-    width: 35%;
-    height: auto;
-    position: absolute;
-    top: 0;
-    z-index: 5;
-  }
-  .background__develop {
-    width: 35%;
-    height: auto;
-    position: absolute;
-    top: 300px;
-    z-index: 5;
-  }
-  .background__create {
-    width: 35%;
-    height: auto;
-    position: absolute;
-    top: 600px;
-    z-index: 5;
-  }
-
-  section {
-    width: 758px;
-    height: 1200px;
+  .about {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: solid 3px red;
-    padding: 5px;
-    margin: 5px;
-  }
-  section img {
-    width: 80%;
-    height: auto;
   }
 
   .hexs {
@@ -78,84 +108,18 @@
     align-items: center;
   }
 
-  .hexs img {
-    height: 35%;
-    width: 35%;
-  }
-
-  main {
-    width: 768px;
-    height: 1400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between 40px;
-    justify-content: center;
-    align-items: center;
-    border: solid 3px red;
-    padding: 5px;
-    margin: 5px;
-  }
-  main button {
-    width: 200px;
-    border: none;
-    background-color: #C4C4C4;
-    color: white;
-    padding: 15px 32px;
-    text-decoration: none;
-    font-size: 22px;
-    margin: 4px 2px;
-    cursor: pointer;
-    z-index: 5;
-  }
-
   .projects {
     background-image: url("Mobile images/projectbackground2.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
     z-index: 2;
   }
-
-  .bottom-hexs {
-    width: 768px;
-    height: 250px;
-    display: flex;
-    justify-content: space-between 0px;
-    justify-content: center;
-    border: solid 3px red;
-    padding: 5px;
-    margin: 5px;
-  }
-  .bottom-hexs img {
-    max-width: 100%;
-    max-height: 100%;
-  }
 }
-/* section hexagaons */
-body {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  color: white;
-}
-
 @media (orientation: landscape) {
   .opening-hexs {
-    width: 1200px;
-    height: auto;
-    border: solid 3px red;
-    padding: 5px;
-    margin: 5px;
-  }
-  .opening-hexs img {
-    width: 33%;
-    height: 33%;
-  }
-
-  section {
-    width: 1200px;
-    height: 768;
-    position: relative;
-    border: solid 3px red;
-    padding: 5px;
-    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .background {
@@ -163,91 +127,32 @@ body {
     background-size: 100%;
     background-repeat: none;
     z-index: 2;
-  }
-
-  .background__capture {
-    width: 30%;
-    height: 30%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 5;
-  }
-  .background__develop {
-    width: 30%;
-    height: 30%;
-    position: absolute;
-    top: 0px;
-    left: 500px;
-    z-index: 5;
-  }
-  .background__create {
-    width: 30%;
-    height: 30%;
-    position: absolute;
-    top: 0px;
-    right: 0;
-    z-index: 5;
-  }
-
-  section {
-    width: 1200px;
-    height: 700px;
-    border: solid 3px red;
-    padding: 5px;
-    margin: 5px;
-  }
-  section img {
-    width: 50%;
-  }
-
-  .hexs img {
-    width: 33%;
-    height: auto;
-  }
-
-  main {
-    width: 1200px;
-    height: 600px;
-    border: solid 3px red;
-    padding: 5px;
-    margin: 5px;
-  }
-  main button {
     display: flex;
-    justify-content: space-around;
+  }
+
+  .about {
+    display: flex;
+    justify-content: center;
     align-items: center;
-    border: none;
-    background-color: #C4C4C4;
-    color: white;
-    padding: 15px 32px;
-    text-decoration: none;
-    font-size: 22px;
-    margin: 4px 2px;
-    cursor: pointer;
-    z-index: 5;
   }
 
   .projects {
-    background-image: url("Mobile images/backgroundlandscape.jpg");
+    background-image: url("Mobile images/1Project-background.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
     z-index: 2;
   }
+}
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between 40px;
+  justify-content: flex-end;
+  align-items: center;
+}
 
-  .bottom-hexs {
-    width: 1200px;
-    height: 200px;
-    display: flex;
-    justify-content: space-between 0px;
-    justify-content: center;
-    align-items: baseline;
-    border: solid 3px red;
-    padding: 5px;
-    margin: 5px;
-  }
-  .bottom-hexs img {
-    max-width: 100%;
-    max-height: 100%;
-  }
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

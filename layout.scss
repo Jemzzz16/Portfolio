@@ -1,143 +1,99 @@
-body {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  color: white;
-}
+// LAYOUTS FOR PORTRAIT
 
-// // LANDSCAPE
-
-@media  (orientation: landscape) {
-  
-  // OPENING PAGE
+@media  (orientation: portrait) {
+  // SPLASH PAGE **PORTRAIT**
   .opening-hexs {
-    width: 1200px;
-    height: auto;
-
-    border: solid 3px red;
-    padding: 5px;
-    margin: 5px;
-
-    img {
-      width: 33%;
-      height: 33%;
-    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  // LANDING PAGE SECTION
-  section {
-    width: 1200px;
-    height: 768;
 
-    position: relative;
-    border: solid 3px red;
-    padding: 5px;
-    margin: 5px;
-  }
+    // LANDING PAGE **PORTRAIT**
   .background {
-    background-image: url('Mobile images/backgroundlandscape.jpg');
+    background-image: url('Mobile images/1.Background-portrait.jpg');
     background-size: 100%;
-    background-repeat: none;
+    background-repeat: no-repeat;
     z-index: 2;
-  }
-  
-  .background {
-    &__capture {
-      width: 30%;
-      height: 30%;
 
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 5;
-    }
-    &__develop {
-      width: 30%;
-      height: 30%;
-
-      position: absolute;
-      top: 0px;
-      left: 500px;
-      z-index: 5;
-    }
-    &__create {
-      width: 30%;
-      height: 30%;
-
-      position: absolute;
-      top: 0px;
-      right: 0;
-      z-index: 5;
-    }
+    display: flex;
+    flex-direction: column;
   }
 
-  // ABOUT SECTION
-  section {
-    width: 1200px;
-    height: 700px;
-
-    border: solid 3px red;
-    padding: 5px;
-    margin: 5px;
-
-    img {
-      width: 50%;
-    }
+  // ABOUT **PORTRAIT**
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
-    
-  .hexs img {
-    width: 33%;
-    height: auto;
-  }
-   
-    
-  // PROJECTS SECTION
-  main {
-    width: 1200px;
-    height: 600px;
-
-    border: solid 3px red;
-    padding: 5px;
-    margin: 5px;
-
-    button {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-
-      border: none;
-      background-color: #C4C4C4;
-      color: white;
-      padding: 15px 32px;
-      text-decoration: none;
-      
-      font-size: 22px;
-      margin: 4px 2px;
-      cursor: pointer;
-      z-index: 5;
-    }
+  .hexs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
+  // PROJECT SECTION **PORTRAIT**
   .projects {
-    background-image: url('Mobile images/backgroundlandscape.jpg');
+    background-image: url('Mobile images/projectbackground2.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
     z-index: 2;
   }
+}
 
-  // CONTACT SECTION
-  .bottom-hexs {
-    width: 1200px;
-    height: 200px;
 
+
+
+// LAYOUTS FOR LANDSCAPE 
+
+@media  (orientation: landscape) {
+  // SPLASH PAGE **LANDSCAPE**
+  .opening-hexs {
     display: flex;
-    justify-content: space-between 0px;
     justify-content: center;
-    align-items: baseline;
-    border: solid 3px red;
-    padding: 5px;
-    margin: 5px;
-
-    img {
-      max-width: 100%;
-      max-height: 100%;
-    }
+    align-items: center;
   }
+
+  // LANDING PAGE **LANDSCAPE**
+  .background{
+    background-image: url('Mobile images/backgroundlandscape.jpg');
+    background-size: 100%;
+    background-repeat: none;
+    z-index: 2;
+    
+    display: flex;
+  }
+
+  // ABOUT **LANDSCAPE**
+  .about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  // PROJECT SECTION **LANDSCAPE**
+  .projects {
+    background-image: url('Mobile images/1Project-background.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 2;
+  }
+}
+
+
+// PROJECTS SECTION
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between 40px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+// CONTACT SECTION
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

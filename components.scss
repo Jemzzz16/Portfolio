@@ -1,84 +1,67 @@
-/* section hexagaons */
-// .hexs {
-//   &__hex4 {
-//     position: absolute;
+// SPLASH PAGE
+.opening-hexs {
+  img {
+    width: 33%;
+  }
+}
+
+// LANDING PAGE
+.background {
+  &__capture {
+    width: 35%;
+    height: 35%;;
+  }
+  &__develop {
+    width: 35%;
+    height: 35%;;
+  }
+  &__create {
+    width: 35%;
+    height: 35%;;
+  }
+}
+
+// ABOUT SECTION
+.about {
+  &__jemmaholmes {
+    width: 80%;
+    height: 80%;
+  }
+}
+.hexs img {
+    height: 35%;
+    width: 35%;
+}
+
+// PROJECTS SECTION
+.projects {
+  button {
+    width: 150px;
+    border: none;
+    background-color: #C4C4C4;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
     
-//   }
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    z-index: 5;
+  }
+}
 
-//   &__hex5 {
-//     position: absolute;
-    
-//   }
-
-//   &__hex6 {
-//     position: absolute;
-    
-//   }
-
-//   &__hex7 {
-//     position: absolute;
-  
-//   }
-
-//   &__hex8 {
-//     position: absolute;
-  
-//   }
-
-//   &__hex9 {
-//     position: absolute;
-    
-//   }
-
-//   &__hex10 {
-//     position: absolute;
-  
-//   }
-
-//   &__hex11 {
-//     position: absolute;
-  
-//   }
-
-//   &__hex12 {
-//     position: absolute;
-//     right: 0px;
-//   }
-
-//   &__hex13 {
-//     position: absolute;
-  
-//   }
-
-//   &__hex14 {
-//     position: absolute;
-    
-//   }
-// }
-// /* bottom hexagons */
-
-// .bottom-hexs {
-//   &__hex15 {
-//     
-//   }
-
-//   &__hex16 {
-//     
-
-//   }
-
-//   &__hex17 {
-//     
-
-//   }
-
-//   &__hex18 {
-//    
-
-//   }
-
-//   &__hex19 {
-//     
-//   }
-// }
-
+// CONTACT PAGE
+.contact {
+  &__linkedin {
+    max-width: 80%;
+    max-height: 80%;
+  }
+  &__instagram {
+    max-width: 80%;
+    max-height: 80%;
+  }
+  &__github {
+    max-width: 80%;
+    max-height: 80%;
+  }
+}
