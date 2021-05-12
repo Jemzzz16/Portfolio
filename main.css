@@ -6,46 +6,44 @@
 
 body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  color: white;
-}
-
-header {
-  width: 100vw;
-  height: 100vh;
-  border: solid 3px red;
-  padding: 5px;
-  margin: 5px;
+  color: #FFFFFF;
 }
 
 section {
-  width: 100vw;
-  height: 100vh;
-  border: solid 3px red;
+  border: solid 3px #EE00FF;
   padding: 5px;
   margin: 5px;
 }
 
-.opening-hexs img {
+.opening-hexs__grey {
+  width: 33%;
+  height: auto;
+}
+.opening-hexs__me {
+  width: 33%;
+  height: auto;
+}
+.opening-hexs__pink {
   width: 33%;
   height: auto;
 }
 
 .background__capture {
-  width: 20%;
-  height: 20%;
+  width: 30%;
+  height: auto;
 }
 .background__develop {
-  width: 20%;
-  height: 20%;
+  width: 30%;
+  height: auto;
 }
 .background__create {
-  width: 20%;
-  height: 20%;
+  width: 30%;
+  height: auto;
 }
 
 .about__jemmaholmes {
-  width: 40%;
-  height: 40%;
+  height: 30%;
+  width: auto;
 }
 
 .hexs img {
@@ -92,6 +90,11 @@ section {
 }
 
 @media (orientation: portrait) {
+  section {
+    height: 100vh;
+    width: 100vw;
+  }
+
   .opening-hexs {
     display: flex;
     flex-direction: column;
@@ -101,11 +104,12 @@ section {
 
   .background {
     background-image: url("Mobile images/Landing-Portrait.jpg");
-    background-size: 100%;
+    background-size: contain;
     background-repeat: no-repeat;
     z-index: 2;
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   .about {
@@ -123,12 +127,17 @@ section {
 
   .projects {
     background-image: url("Mobile images/Project-Portrait.jpg");
-    background-size: 100%;
+    background-size: contain;
     background-repeat: no-repeat;
     z-index: 2;
   }
 }
 @media (orientation: landscape) {
+  section {
+    width: 100vw;
+    height: 100vh;
+  }
+
   .opening-hexs {
     display: flex;
     justify-content: center;
@@ -137,10 +146,12 @@ section {
 
   .background {
     background-image: url("Mobile images/Landing-Landscape.jpg");
-    background-size: 100%;
-    background-repeat: none;
+    background-size: contain;
+    background-repeat: no-repeat;
     z-index: 2;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
 
   .about {
@@ -151,7 +162,7 @@ section {
 
   .projects {
     background-image: url("Mobile images/Project-Landscape.jpg");
-    background-size: 100%;
+    background-size: contain;
     background-repeat: no-repeat;
     z-index: 2;
   }

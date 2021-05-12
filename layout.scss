@@ -1,6 +1,11 @@
 // LAYOUTS FOR PORTRAIT
 
 @media  (orientation: portrait) {
+  section {
+    height: 100vh;
+    width: 100vw;
+  }
+
   // SPLASH PAGE **PORTRAIT**
   .opening-hexs {
     display: flex;
@@ -12,12 +17,13 @@
     // LANDING PAGE **PORTRAIT**
   .background {
     background-image: url('Mobile images/Landing-Portrait.jpg');
-    background-size: 100%;
+    background-size: contain;
     background-repeat: no-repeat;
     z-index: 2;
 
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   // ABOUT **PORTRAIT**
@@ -36,7 +42,7 @@
   // PROJECT SECTION **PORTRAIT**
   .projects {
     background-image: url('Mobile images/Project-Portrait.jpg');
-    background-size: 100%;
+    background-size: contain;
     background-repeat: no-repeat;
     z-index: 2;
   }
@@ -48,6 +54,11 @@
 // LAYOUTS FOR LANDSCAPE 
 
 @media  (orientation: landscape) {
+  section {
+    width: 100vw;
+    height: 100vh;
+  }
+
   // SPLASH PAGE **LANDSCAPE**
   .opening-hexs {
     display: flex;
@@ -58,11 +69,13 @@
   // LANDING PAGE **LANDSCAPE**
   .background{
     background-image: url('Mobile images/Landing-Landscape.jpg');
-    background-size: 100%;
-    background-repeat: none;
+    background-size: contain;
+    background-repeat: no-repeat;
     z-index: 2;
     
     display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
 
   // ABOUT **LANDSCAPE**
@@ -75,7 +88,7 @@
   // PROJECT SECTION **LANDSCAPE**
   .projects {
     background-image: url('Mobile images/Project-Landscape.jpg');
-    background-size: 100%;
+    background-size: contain;
     background-repeat: no-repeat;
     z-index: 2;
   }
