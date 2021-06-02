@@ -17,7 +17,7 @@
     // LANDING PAGE **PORTRAIT**
   .background {
     background-image: url('Mobile images/Landing-Portrait.jpg');
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     z-index: 2;
 
@@ -69,9 +69,10 @@
   // LANDING PAGE **LANDSCAPE**
   .background{
     background-image: url('Mobile images/Landing-Landscape.jpg');
-    background-size: contain;
+    background-size: 80%;
     background-repeat: no-repeat;
     z-index: 2;
+    padding: 20px;
     
     display: flex;
     justify-content: space-around;
@@ -88,7 +89,7 @@
   // PROJECT SECTION **LANDSCAPE**
   .projects {
     background-image: url('Mobile images/Project-Landscape.jpg');
-    background-size: contain;
+    background-size: 80%;
     background-repeat: no-repeat;
     z-index: 2;
   }

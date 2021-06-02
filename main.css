@@ -15,6 +15,9 @@ section {
   margin: 5px;
 }
 
+.opening-hexs {
+  animation: opening-hexs 1s ease-in forwards;
+}
 .opening-hexs__grey {
   width: 33%;
   height: auto;
@@ -26,6 +29,17 @@ section {
 .opening-hexs__pink {
   width: 33%;
   height: auto;
+}
+
+@keyframes fade-in {
+  to {
+    opacity: 1;
+  }
+}
+.opening-hexs.display-none {
+  opacity: 0;
+  z-index: -10;
+  animation: opening-hexs 1s ease-in forwards;
 }
 
 .background__capture {
@@ -104,7 +118,7 @@ section {
 
   .background {
     background-image: url("Mobile images/Landing-Portrait.jpg");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     z-index: 2;
     display: flex;
@@ -146,9 +160,10 @@ section {
 
   .background {
     background-image: url("Mobile images/Landing-Landscape.jpg");
-    background-size: contain;
+    background-size: 80%;
     background-repeat: no-repeat;
     z-index: 2;
+    padding: 20px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -162,7 +177,7 @@ section {
 
   .projects {
     background-image: url("Mobile images/Project-Landscape.jpg");
-    background-size: contain;
+    background-size: 80%;
     background-repeat: no-repeat;
     z-index: 2;
   }
